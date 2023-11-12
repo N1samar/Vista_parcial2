@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-auth',
   standalone: true,
   imports: [CommonModule, SharedModule],
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
+  templateUrl: './auth.component.html',
+  styleUrls: ['./auth.component.scss'],
 })
-export class LoginComponent {}
+export class AuthComponent {}

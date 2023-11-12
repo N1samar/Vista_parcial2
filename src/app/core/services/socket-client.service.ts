@@ -16,8 +16,7 @@ export class SocketClientService {
       reconnection: true,
       forceNew: true,
       extraHeaders: {
-        authentication:
-          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJ0eXBlVXNlciI6InVzZXIiLCJpYXQiOjE2OTk4MTI4NDAsImV4cCI6MTY5OTgxNjQ0MH0.hx6l-94eISw0KE8u_mhYE-hCoBZXwxB8ckG3W4yaffM',
+        authentication: localStorage.getItem('access_token') ?? ' ',
       },
     });
 

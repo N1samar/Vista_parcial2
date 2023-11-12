@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
-import { ResponsiveHelperComponent } from './shared/components/responsive-helper/responsive-helper.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +15,6 @@ import { ResponsiveHelperComponent } from './shared/components/responsive-helper
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ResponsiveHelperComponent,
     AngularSvgIconModule.forRoot(),
   ],
   providers: [],

@@ -3,7 +3,7 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 import { RouterLinkActive, RouterLink } from '@angular/router';
 import { NgClass, NgFor, NgTemplateOutlet } from '@angular/common';
 import { SubMenuItem } from 'src/app/data/models/menu.model';
-import { MenuService } from 'src/app/shared/services/menu.service';
+import { MenuService } from 'src/app/core/services/menu.service';
 
 @Component({
   selector: 'app-navbar-mobile-submenu',

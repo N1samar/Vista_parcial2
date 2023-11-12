@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { TaskComponent } from './task/task.component';
 import { OperatorComponent } from './operator/operator.component';
+import { DashnoardComponent } from './dashnoard/dashnoard.component';
 
 export const routesAdmin: Routes = [
   {
@@ -12,8 +13,12 @@ export const routesAdmin: Routes = [
     loadComponent: () => OperatorComponent,
   },
   {
+    path: 'dashboard',
+    loadComponent: () => DashnoardComponent,
+  },
+  {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'task',
+    redirectTo: 'dashboard',
   },
 ];

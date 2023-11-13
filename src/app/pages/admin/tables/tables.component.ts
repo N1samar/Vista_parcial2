@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-operator',
+  selector: 'app-tables',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './operator.component.html',
-  styleUrls: ['./operator.component.scss']
+  templateUrl: './tables.component.html',
+  styleUrls: ['./tables.component.scss']
 })
-export class OperatorComponent {
+export class TablesComponent {
 
 }

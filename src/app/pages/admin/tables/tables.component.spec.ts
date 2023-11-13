@@ -1,16 +1,15 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TablesComponent } from './tables.component';
 
-import { OperatorComponent } from './operator.component';
-
-describe('OperatorComponent', () => {
-  let component: OperatorComponent;
-  let fixture: ComponentFixture<OperatorComponent>;
+describe('TablesComponent', () => {
+  let component: TablesComponent;
+  let fixture: ComponentFixture<TablesComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [OperatorComponent]
+      imports: [TablesComponent]
     });
-    fixture = TestBed.createComponent(OperatorComponent);
+    fixture = TestBed.createComponent(TablesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

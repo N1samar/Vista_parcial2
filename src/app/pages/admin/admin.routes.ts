@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { TaskComponent } from './task/task.component';
-import { OperatorComponent } from './operator/operator.component';
 import { DashnoardComponent } from './dashnoard/dashnoard.component';
+import { TablesComponent } from './tables/tables.component';
 
 export const routesAdmin: Routes = [
   {
@@ -9,8 +9,8 @@ export const routesAdmin: Routes = [
     loadComponent: () => TaskComponent,
   },
   {
-    path: 'operator',
-    loadComponent: () => OperatorComponent,
+    path: 'tables',
+    loadComponent: () => TablesComponent,
   },
   {
     path: 'dashboard',

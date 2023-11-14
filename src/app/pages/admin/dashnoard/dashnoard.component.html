@@ -1,1 +1,18 @@
-<p>dashnoard works!</p>
+
+<!-- dashboard.component.html -->
+<div>
+    <h2>Pie Chart</h2>
+    <app-pie-chart></app-pie-chart>
+  </div>
+  
+<!-- pie-chart.component.html -->
+<div>
+    <!-- Contenido del gráfico de torta -->
+    <canvas baseChart
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"
+            [legend]="pieChartLegend">
+    </canvas>
+  </div>

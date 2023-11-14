@@ -43,7 +43,6 @@ export class LoginComponent {
 
     this._authService.login({ username, password }).subscribe({
       next: ({ data }) => {
-        localStorage.setItem('access_token', data.token);
         this._router.navigate(['/admin']);
       },
       error: (err) => {

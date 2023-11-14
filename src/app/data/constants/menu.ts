@@ -3,23 +3,23 @@ import { MenuItem } from '../models/menu.model';
 export class Menu {
   public static pages: MenuItem[] = [
     {
-      group: 'Operacion',
+      group: 'Operaciones',
       separator: false,
       items: [
         {
-          icon: 'assets/icons/heroicons/outline/chart-pie.svg',
-          label: 'Dashboard',
+          icon: 'assets/icons/dash.svg',
+          label: 'Tableros',
           route: '/admin/dashboard',
         },
         {
-          icon: 'assets/icons/heroicons/outline/view-grid.svg',
-          label: 'Tareas',
-          route: '/admin/task',
+          icon: 'assets/icons/upload.svg',
+          label: 'Cargar archivos',
+          route: '/admin/up',
         },
         {
-          icon: 'assets/icons/heroicons/outline/users.svg',
-          label: 'Operadores',
-          route: '/admin/operator',
+          icon: 'assets/icons/table.svg',
+          label: 'Tablas',
+          route: '/admin/tables',
         },
       ],
     },

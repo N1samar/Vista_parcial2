@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
-import { TaskComponent } from './task/task.component';
+import { UpComponent } from './up/up.component';
 import { DashnoardComponent } from './dashnoard/dashnoard.component';
 import { TablesComponent } from './tables/tables.component';
 
 export const routesAdmin: Routes = [
   {
-    path: 'task',
-    loadComponent: () => TaskComponent,
+    path: 'up',
+    loadComponent: () => UpComponent,
   },
   {
     path: 'tables',

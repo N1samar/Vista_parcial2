@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-task',
+  selector: 'app-up',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './task.component.html',
-  styleUrls: ['./task.component.scss']
+  templateUrl: './up.component.html',
+  styleUrls: ['./up.component.scss']
 })
-export class TaskComponent {
+export class UpComponent {
 
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SocketClientService } from './core/services/socket-client.service';
 import { ThemeService } from './core/services/theme.service';
 
 @Component({
@@ -7,17 +6,9 @@ import { ThemeService } from './core/services/theme.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
-  title = 'field-service-frontend';
+export class AppComponent{
 
   constructor(
-    private socketService: SocketClientService,
     public themeService: ThemeService
   ) {}
-
-  ngOnInit(): void {
-    this.socketService.listenin('operator-position').subscribe((data) => {
-      console.log(data);
-    });
-  }
 }
